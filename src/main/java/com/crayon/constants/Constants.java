@@ -30,7 +30,7 @@ public class Constants {
     public static String INFLUX_URL_QUERY ="http://localhost:8086/api/v2/query";
     public static String INFLUX_URL_WRITE ="http://localhost:8086/api/v2/write";
 
-    public static int ORGANIZATION_ID=4045755;
+    public static int ORGANIZATION_ID= 4059442;
     public static int PUBLISHER_ID=2;
     public static int Magically_Genius_INVOICE_ID=207443;
     public static int Outbox_Labs_INVOICE_ID=180723;
@@ -73,8 +73,8 @@ public class Constants {
 
         CLIENT_ID("CLIENT_ID", "bd131176-82c8-49cf-9c01-387d7ae11a80"),
         CLIENT_SECRET("CLIENT_SECRET", "cbebba0a-d33f-4957-a796-d90c6ab06e81"),
-        USER_NAME("USER_NAME", "rsvp@axalingroup.com"),
-        PASS_WORD("PASS_WORD", "Axalingroup@2025"),
+        USER_NAME("USER_NAME", "rajasekar@fugotek.co.in"),
+        PASS_WORD("PASS_WORD", "Fugotek@2026"),
         GRANT_TYPE("","password"),
         SCOPE("","CustomerApi"),
         CRAYON_BASE_URL("CRAYON_BASE_URL","https://api.crayon.com/api/"),
