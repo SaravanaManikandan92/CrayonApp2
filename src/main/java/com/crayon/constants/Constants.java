@@ -6,19 +6,12 @@ public class Constants {
 
     //
 
-    public static List<String> clientList = Arrays.asList("test","57747f5d-6758-4afa-9d65-0a3097b68389","dd636335-efbe-491b-b3b3-d8225c8dc1d1",
-            "6434afd2-811c-400c-ac13-d133b476086a","30b1b92c-cd3c-46c2-8375-de13cb5d20ae","1d742172-6ea3-46d0-b83e-9553c5879414",
-            "36ef3b68-aae4-4521-b367-8cefeff85b29","999668d6-5b49-4ea3-aa2a-00856183c0e9","1543c674-58d3-41c9-8af7-56eb6e8e4306");
+    public static List<String> clientList = Arrays.asList("test","05c4379e-9d9b-4170-add9-df499540084c","987ad23c-2031-420e-9992-7491a93551be");
   //  public static List<String> clientList = Arrays.asList("Magically_Genius","Outbox_Labs","MicroSaaS_Labs","Cheap_Inbox");
   public static Map<String,String> clientListMap = Map.ofEntries(
-          Map.entry("57747f5d-6758-4afa-9d65-0a3097b68389", "Magically_Genius"),
-          Map.entry("dd636335-efbe-491b-b3b3-d8225c8dc1d1", "Outbox_Labs"), // default February
-          Map.entry("6434afd2-811c-400c-ac13-d133b476086a", "MicroSaaS_Labs"),
-          Map.entry("30b1b92c-cd3c-46c2-8375-de13cb5d20ae", "Cheap_Inbox"),
-          Map.entry("1d742172-6ea3-46d0-b83e-9553c5879414","axalin"),
-          Map.entry("36ef3b68-aae4-4521-b367-8cefeff85b29","Receptive_Marketing"),
-          Map.entry("999668d6-5b49-4ea3-aa2a-00856183c0e9","Mailin-Ai"),
-          Map.entry("1543c674-58d3-41c9-8af7-56eb6e8e4306","INBOX navigator")
+          Map.entry("05c4379e-9d9b-4170-add9-df499540084c", "Magically_Genius"),
+          Map.entry("987ad23c-2031-420e-9992-7491a93551be","Mailin-Ai")
+
   );
   // public static String INFLUX_TOKEN ="Kq7seBQiRWyqbkF4DYe5mH-6FkVoyW6xTXF5LzGsBihqTpkULkXBfLhYhtyyBA9tdgTN3SPrDeitO6on-_cEdA==";//"Token A7MJiqEvG-3B-n5geDnVWQ_61KnpWbLpueTPywlr7PrsX19YTqXyikVuTnjnshDOEVv9-1wUa7XSMbSnxjm0Tw=="; //this is local
 
@@ -42,14 +35,8 @@ public class Constants {
     public static int cancelSubscription=4;
 
     public static Map<String,String> invoiceMap = Map.ofEntries(
-            Map.entry("57747f5d-6758-4afa-9d65-0a3097b68389", "207443"),
-            Map.entry("dd636335-efbe-491b-b3b3-d8225c8dc1d1", "180723"), // default February
-            Map.entry("6434afd2-811c-400c-ac13-d133b476086a", "211425"),
-            Map.entry("30b1b92c-cd3c-46c2-8375-de13cb5d20ae", "212451"),
-            Map.entry("1d742172-6ea3-46d0-b83e-9553c5879414","203480"),
-            Map.entry("36ef3b68-aae4-4521-b367-8cefeff85b29","213628"),
-            Map.entry("999668d6-5b49-4ea3-aa2a-00856183c0e9","222776"),
-            Map.entry("1543c674-58d3-41c9-8af7-56eb6e8e4306","229274")
+            Map.entry("05c4379e-9d9b-4170-add9-df499540084c", ""),
+            Map.entry("987ad23c-2031-420e-9992-7491a93551be","227126")
     );//203480
 
     public static final Map<Integer, Integer> baseMonthDateMap = Map.ofEntries(
@@ -71,8 +58,8 @@ public class Constants {
     //https://api.crayon.com/api/
     public enum ClientDetails {
 
-        CLIENT_ID("CLIENT_ID", "bd131176-82c8-49cf-9c01-387d7ae11a80"),
-        CLIENT_SECRET("CLIENT_SECRET", "cbebba0a-d33f-4957-a796-d90c6ab06e81"),
+        CLIENT_ID("CLIENT_ID", "5681b3ec-640f-4a55-974d-3de2e8edcccf"),
+        CLIENT_SECRET("CLIENT_SECRET", "36a1ad5b-581a-4389-85f1-7326c2545a3c"),
         USER_NAME("USER_NAME", "rajasekar@fugotek.co.in"),
         PASS_WORD("PASS_WORD", "Fugotek@2026"),
         GRANT_TYPE("","password"),
