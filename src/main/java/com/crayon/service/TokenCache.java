@@ -15,18 +15,18 @@ public class TokenCache {
     private static long expiryTime;
 
 
-    public synchronized String getToken() {
+    public synchronized String getToken(String source) {
 
         if (token == null || System.currentTimeMillis() >= expiryTime) {
-            refreshToken();
+            refreshToken(source);
         }
         return token;
 
     }
 
-    private  void refreshToken() {
+    private  void refreshToken(String source) {
 
-        TokenResponse tokenResponse = fetchTokenFromApi();
+        TokenResponse tokenResponse = fetchTokenFromApi(source);
         if(tokenResponse==null){
             throw new NullPointerException("Something went wrong here.Null value is received as token.");
         }
@@ -34,9 +34,9 @@ public class TokenCache {
         expiryTime = System.currentTimeMillis() + (tokenResponse.getExpiresIn() - 60) * 1000L;
     }
 
-    private TokenResponse fetchTokenFromApi() {
+    private TokenResponse fetchTokenFromApi(String source) {
 
-        TokenResponse tokenResponse = tokenService.getAccessToken();
+        TokenResponse tokenResponse = tokenService.getAccessToken(source);
         return tokenResponse;
     }
 }

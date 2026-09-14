@@ -25,9 +25,9 @@ public class CrayonController {
     @Autowired
     CrayonService crayonService;
 
-    @GetMapping("/getAccessToken")
-    public TokenResponse getAccessToken() {
-        return tokenService.getAccessToken();
+    @GetMapping("/getAccessToken/{id}")
+    public TokenResponse getAccessToken(@PathVariable  String id) {
+        return tokenService.getAccessToken(id);
     }
 
 

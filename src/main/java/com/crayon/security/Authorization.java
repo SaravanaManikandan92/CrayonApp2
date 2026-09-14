@@ -27,8 +27,8 @@ public class Authorization  {
     @Bean
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
-                .clientId("crayonApp")
-                .clientSecret(passwordEncoder2().encode("cRaY0NApp"))
+                .clientId("ee92d31697b07335bff634b863151f94")
+                .clientSecret(passwordEncoder2().encode("03be71bb70588b5a104ce1700dabfda7"))
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .scope("read")
                 .scope("write")

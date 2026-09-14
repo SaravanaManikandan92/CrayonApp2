@@ -10,7 +10,8 @@ public class Constants {
   //  public static List<String> clientList = Arrays.asList("Magically_Genius","Outbox_Labs","MicroSaaS_Labs","Cheap_Inbox");
   public static Map<String,String> clientListMap = Map.ofEntries(
           Map.entry("05c4379e-9d9b-4170-add9-df499540084c", "Magically_Genius"),
-          Map.entry("987ad23c-2031-420e-9992-7491a93551be","Mailin-Ai")
+          Map.entry("987ad23c-2031-420e-9992-7491a93551be","Mailin-Ai"),
+          Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","Klendify")
 
   );
   // public static String INFLUX_TOKEN ="Kq7seBQiRWyqbkF4DYe5mH-6FkVoyW6xTXF5LzGsBihqTpkULkXBfLhYhtyyBA9tdgTN3SPrDeitO6on-_cEdA==";//"Token A7MJiqEvG-3B-n5geDnVWQ_61KnpWbLpueTPywlr7PrsX19YTqXyikVuTnjnshDOEVv9-1wUa7XSMbSnxjm0Tw=="; //this is local
@@ -35,9 +36,25 @@ public class Constants {
     public static int cancelSubscription=4;
 
     public static Map<String,String> invoiceMap = Map.ofEntries(
-            Map.entry("05c4379e-9d9b-4170-add9-df499540084c", ""),
-            Map.entry("987ad23c-2031-420e-9992-7491a93551be","227126")
+            Map.entry("05c4379e-d9b-4170-add9-df499540084c9", "240242"),
+            Map.entry("987ad23c-2031-420e-9992-7491a93551be","227126"),
+            Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","232495")
+
     );//203480
+
+    public static Map<String,String> userNameMap = Map.ofEntries(
+            Map.entry("240242", "mgenius@fugotek.co.in"),
+            Map.entry("227126", "mailin@fugotek.co.in"),
+            Map.entry("232495", "klendify@fugotek.co.in")
+
+    );
+
+    public static Map<String,String> pwdMap = Map.ofEntries(
+            Map.entry("240242", "AvX4w5y0e*0fc014u}M@"),
+            Map.entry("227126", "Qf!BGx*MBNb)Xe4Vfjw)"),
+            Map.entry("232495", "U4rm)!_h=Bybq#wu]km,")
+
+    );
 
     public static final Map<Integer, Integer> baseMonthDateMap = Map.ofEntries(
             Map.entry(1, 31),

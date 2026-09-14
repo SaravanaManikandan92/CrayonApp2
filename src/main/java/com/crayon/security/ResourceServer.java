@@ -27,7 +27,7 @@ public class ResourceServer {
                         .bearerTokenResolver(customBearerTokenResolver())
                         .opaqueToken(opaque -> opaque
                                 .introspectionUri("http://localhost:8080/oauth2/introspect")
-                                .introspectionClientCredentials("crayonApp", "cRaY0NApp")
+                                .introspectionClientCredentials("ee92d31697b07335bff634b863151f94", "03be71bb70588b5a104ce1700dabfda7")
                         )
                 );
 
