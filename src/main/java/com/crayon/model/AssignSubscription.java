@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Min;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,6 +33,8 @@ public class AssignSubscription {
     @JsonProperty("name")
     private String name;
 
+    @Valid
+    @Min(value=3,message="Quantity must be minimum 3")
     @JsonProperty("quantity")
     private int  quantity;
 
