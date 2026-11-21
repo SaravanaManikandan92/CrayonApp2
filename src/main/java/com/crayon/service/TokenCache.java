@@ -5,22 +5,24 @@ import com.crayon.model.TokenResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+
 @Component
 public class TokenCache {
 
     @Autowired
     TokenService tokenService;
 
-    private static String token;
-    private static long expiryTime;
+    private static HashMap<String,String> tokenMap=new HashMap<>();
+    private static HashMap<String,Long> expiryMap=new HashMap<>();
 
 
     public synchronized String getToken(String source) {
 
-        if (token == null || System.currentTimeMillis() >= expiryTime) {
+        if (tokenMap.get(source) == null || System.currentTimeMillis() >= expiryMap.get(source)) {
             refreshToken(source);
         }
-        return token;
+        return tokenMap.get(source);
 
     }
 
@@ -30,8 +32,11 @@ public class TokenCache {
         if(tokenResponse==null){
             throw new NullPointerException("Something went wrong here.Null value is received as token.");
         }
-        token = tokenResponse.getAccessToken();
-        expiryTime = System.currentTimeMillis() + (tokenResponse.getExpiresIn() - 60) * 1000L;
+
+        String token = tokenResponse.getAccessToken();
+        tokenMap.put(source,token);
+        long expiryTime = System.currentTimeMillis() + (tokenResponse.getExpiresIn() - 60) * 1000L;
+        expiryMap.put(source,expiryTime);
     }
 
     private TokenResponse fetchTokenFromApi(String source) {

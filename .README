@@ -11,9 +11,9 @@ Use the below curl to generate the token
 
 REQUEST:
 
-curl --location --request POST 'http://api.axalingroup.com/oauth2/token' \
+curl --location --request POST 'https://api.fugotek.com/oauth2/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Authorization: Basic Y3JheW9uQXBwOmNSYVkwTkFwcA==' \
+--header 'Authorization: Basic ZWU5MmQzMTY5N2IwNzMzNWJmZjYzNGI4NjMxNTFmOTQ6MDNiZTcxYmI3MDU4OGI1YTEwNGNlMTcwMGRhYmZkYTc=' \
 --header 'Cookie: JSESSIONID=8F8C7C0FBD6E59DBCBD9C95912B9D25E' \
 --data-urlencode 'grant_type=client_credentials'
 

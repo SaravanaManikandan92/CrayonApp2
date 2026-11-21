@@ -6,12 +6,19 @@ public class Constants {
 
     //
 
-    public static List<String> clientList = Arrays.asList("test","05c4379e-9d9b-4170-add9-df499540084c","987ad23c-2031-420e-9992-7491a93551be");
+    public static List<String> clientList = Arrays.asList("test","05c4379e-9d9b-4170-add9-df499540084c","987ad23c-2031-420e-9992-7491a93551be","7661da5a-044f-4be4-b5cf-3b99a4032ca7",
+            "9e7a8fb5-ef75-47e6-a9f6-7c617558129b",
+            "fa1eef3b-0679-4b6c-b0bb-b0c9b81376f1",
+"40ec0713-ce64-40ff-92c2-6933012ff391",
+    "b5dc1c08-03c3-4a42-a2a2-bd7479281e32");
   //  public static List<String> clientList = Arrays.asList("Magically_Genius","Outbox_Labs","MicroSaaS_Labs","Cheap_Inbox");
   public static Map<String,String> clientListMap = Map.ofEntries(
           Map.entry("05c4379e-9d9b-4170-add9-df499540084c", "Magically_Genius"),
           Map.entry("987ad23c-2031-420e-9992-7491a93551be","Mailin-Ai"),
-          Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","Klendify")
+          Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","Klendify"),
+          Map.entry("9e7a8fb5-ef75-47e6-a9f6-7c617558129b", "Cheap inbox"),
+          Map.entry("fa1eef3b-0679-4b6c-b0bb-b0c9b81376f1","Icemail"),
+          Map.entry("40ec0713-ce64-40ff-92c2-6933012ff391","Inboxnavigate")
 
   );
   // public static String INFLUX_TOKEN ="Kq7seBQiRWyqbkF4DYe5mH-6FkVoyW6xTXF5LzGsBihqTpkULkXBfLhYhtyyBA9tdgTN3SPrDeitO6on-_cEdA==";//"Token A7MJiqEvG-3B-n5geDnVWQ_61KnpWbLpueTPywlr7PrsX19YTqXyikVuTnjnshDOEVv9-1wUa7XSMbSnxjm0Tw=="; //this is local
@@ -38,21 +45,30 @@ public class Constants {
     public static Map<String,String> invoiceMap = Map.ofEntries(
             Map.entry("05c4379e-d9b-4170-add9-df499540084c9", "240242"),
             Map.entry("987ad23c-2031-420e-9992-7491a93551be","227126"),
-            Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","232495")
+            Map.entry("7661da5a-044f-4be4-b5cf-3b99a4032ca7","232495"),
+            Map.entry("9e7a8fb5-ef75-47e6-a9f6-7c617558129b", "245070"),
+            Map.entry("fa1eef3b-0679-4b6c-b0bb-b0c9b81376f1","245071"),
+            Map.entry("40ec0713-ce64-40ff-92c2-6933012ff391","245073")
 
     );//203480
 
     public static Map<String,String> userNameMap = Map.ofEntries(
             Map.entry("240242", "mgenius@fugotek.co.in"),
             Map.entry("227126", "mailin@fugotek.co.in"),
-            Map.entry("232495", "klendify@fugotek.co.in")
+            Map.entry("232495", "klendify@fugotek.co.in"),
+            Map.entry("245070", "cheapinbox@fugotek.co.in"),
+            Map.entry("245071", "icemail@fugotek.co.in"),
+            Map.entry("245073", "inboxnavigate@fugotek.co.in")
 
     );
 
     public static Map<String,String> pwdMap = Map.ofEntries(
             Map.entry("240242", "AvX4w5y0e*0fc014u}M@"),
             Map.entry("227126", "Qf!BGx*MBNb)Xe4Vfjw)"),
-            Map.entry("232495", "U4rm)!_h=Bybq#wu]km,")
+            Map.entry("232495", "U4rm)!_h=Bybq#wu]km,"),
+            Map.entry("245070", "Cheapinbox@2026"),
+            Map.entry("245071", "Icemail@2026"),
+            Map.entry("245073", "Inboxnavigate@2026")
 
     );
 
